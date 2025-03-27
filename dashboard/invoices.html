@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en" class="light" style="color-scheme: light;">
+
+<head>
+    <meta name="viewport" content="width=device-width">
+    <meta charset="utf-8">
+    <title>Dashboard - Aspect Blockchain</title>
+    <link rel="icon" href="/favicon.ico">
+    <link rel="stylesheet" href="../css/animate.min.css">
+    <link rel="stylesheet" href="../css/style1.css">
+    <link rel="stylesheet" href="../css/style2.css">
+</head>
+
+<body>
+    <div>
+        <header class="z-30 fixed w-screen bg-white shadow-cta" style="z-index: 102;">
+            <div class="container mx-auto lg:mx-0 pr-4 overflow-visible ">
+                <div class="flex flex-row items-center justify-start">
+                    <div
+                        class="flex items-stretch justify-center lg:justify-start pl-4 w-full lg:w-300px py-4 border-r border-transparent lg:hidden lg:border-gray-accent">
+                        <div class="z-10 flex absolute left-0 pl-5 py-2 top-0 bottom-0 lg:hidden"><button id="bar"
+                                type="button" class="cursor-pointer inline-block lg:hidden rounded-full z-50 lg:mr-0 w-10
+                h-10 text-gold-lite mr-0 outline-none lg:w-10 lg:h-10 order-3 focus:outline-none ">
+                                <div class="bar1 bg-black mx-auto"></div>
+                                <div class="invis"></div>
+                                <div class="bar3 bg-black mx-auto"></div>
+                            </button></div>
+                        <div class="flex items-stretch"><a href="/" class="block mr-3 text-current">
+                                <img class="w-28 lg:w-40" src="../images/site-logof1.png"></a>
+                        </div>
+                    </div>
+                </div>
+        </header>
+        <section class="bg-gray-marble flex max-w-screen xxl:overflow-hidden">
+            <div id="sidebar"
+                class="z-50 fixed flex h-screen inset-0 items-stretch  justify-end transform-transition ease-in-out"
+                style="transform: translate3d(-100%, 0%, 0px);">
+                <div
+                    class="dashboard-menu flex-col justify-between overflow-y-auto pb-10 pt-20 relative w-screen z-50 lg:py-20 md:w-1/2">
+                    <div class="w-full lg:w-2/3">
+                        <div class="font-mont mt-4 text-lg w-full lg:mt-12">
+                            <nav class="mt-5 flex-1 px-5 ">
+                                <h3 class="font-family-montserrat-bold text-xs uppercase pb-3 text-white">General</h3>
+                                <div class="flex flex-col pl-5"><a href="hosting-order.html"
+                                        class="w-full mt-1 group cursor-pointer flex items-center px-4  py-5 text-base leading-6 font-medium focus:outline-none transition ease-in-out duration-150 hover:text-black hover:bg-gray-dashboard-link text-gray-500 undefined">
+                                        <svg class="fill-current w-4 btli-link-color" viewBox="0 0 19 18" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M17.3536 6.56239C18.1432 5.9939 18.6572 5.06225 18.6572 4.02063C18.6572 2.31131 17.2736 0.899994 15.5366 0.899994H3.32071C1.61025 0.899994 0.200073 2.31017 0.200073 4.02063C0.200073 5.0639 0.71551 5.99616 1.51213 6.56428C0.720328 7.13293 0.200073 8.06107 0.200073 9.09999C0.200073 10.1433 0.71551 11.0755 1.51213 11.6436C0.720327 12.2123 0.200073 13.1404 0.200073 14.1794C0.200073 15.8887 1.58372 17.3 3.32071 17.3H15.562C17.2747 17.3 18.6572 15.8875 18.6572 14.1794C18.6572 13.1398 18.1454 12.2104 17.3536 11.6418C18.1432 11.0733 18.6572 10.1416 18.6572 9.09999C18.6572 8.06041 18.1454 7.13107 17.3536 6.56239ZM1.36198 4.02063C1.36198 5.10382 2.23751 5.97936 3.32071 5.97936H5.38102V2.0619H3.32071C2.23751 2.0619 1.36198 2.93744 1.36198 4.02063ZM15.5366 5.97936C16.6198 5.97936 17.4953 5.10382 17.4953 4.02063C17.4953 2.93744 16.6198 2.0619 15.5366 2.0619H6.54292V5.9999L15.5366 5.97936ZM15.5366 11.0587C16.6198 11.0587 17.4953 10.1832 17.4953 9.09999C17.4953 8.0168 16.6198 7.14126 15.5366 7.14126L6.54292 7.14126V11.0587H15.5366ZM5.38102 7.14126H3.32071C2.23751 7.14126 1.36198 8.0168 1.36198 9.09999C1.36198 10.1832 2.23751 11.0587 3.32071 11.0587H5.38102V7.14126ZM6.54292 16.1381H15.5366C16.6198 16.1381 17.4953 15.2626 17.4953 14.1794C17.4953 13.0962 16.6198 12.2206 15.5366 12.2206H6.54292V16.1381ZM5.38102 16.1381V12.2206H3.32071C2.23751 12.2206 1.36198 13.0962 1.36198 14.1794C1.36198 15.2626 2.23751 16.1381 3.32071 16.1381H5.38102Z">
+                                            </path>
+                                        </svg><span class="undefined pl-4 pr-8 leading-none">Hosting Orders</span></a>
+                                    <a href="#" class="w-full mt-1 group cursor-pointer flex items-center px-4  py-5 text-base leading-6 font-medium focus:outline-none transition ease-in-out duration-150 hover:text-black hover:bg-gray-dashboard-link text-black bg-gray-dashboard-link undefined"><svg
+                                            class="fill-current w-4 btli-link-color" viewBox="0 0 37 32" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M33.1429 2.28571C33.7731 2.28571 34.2857 2.79843 34.2857 3.42857V28.5714C34.2857 29.2016 33.7731 29.7143 33.1429 29.7143H3.42857C2.79836 29.7143 2.28571 29.2016 2.28571 28.5714V3.42857C2.28571 2.79843 2.79836 2.28571 3.42857 2.28571H33.1429ZM33.1429 0H3.42857C1.535 0 0 1.535 0 3.42857V28.5714C0 30.465 1.535 32 3.42857 32H33.1429C35.0364 32 36.5714 30.465 36.5714 28.5714V3.42857C36.5714 1.535 35.0364 0 33.1429 0ZM9.14286 6.85714C7.8805 6.85714 6.85714 7.8805 6.85714 9.14286C6.85714 10.4052 7.8805 11.4286 9.14286 11.4286C10.4052 11.4286 11.4286 10.4052 11.4286 9.14286C11.4286 7.8805 10.4052 6.85714 9.14286 6.85714ZM9.14286 13.7143C7.8805 13.7143 6.85714 14.7376 6.85714 16C6.85714 17.2624 7.8805 18.2857 9.14286 18.2857C10.4052 18.2857 11.4286 17.2624 11.4286 16C11.4286 14.7376 10.4052 13.7143 9.14286 13.7143ZM9.14286 20.5714C7.8805 20.5714 6.85714 21.5948 6.85714 22.8571C6.85714 24.1195 7.8805 25.1429 9.14286 25.1429C10.4052 25.1429 11.4286 24.1195 11.4286 22.8571C11.4286 21.5948 10.4052 20.5714 9.14286 20.5714ZM29.7143 10V8.28572C29.7143 8.17205 29.6691 8.06304 29.5888 7.98267C29.5084 7.9023 29.3994 7.85714 29.2857 7.85714H14.1429C14.0292 7.85714 13.9202 7.9023 13.8398 7.98267C13.7594 8.06304 13.7143 8.17205 13.7143 8.28572V10C13.7143 10.1137 13.7594 10.2227 13.8398 10.303C13.9202 10.3834 14.0292 10.4286 14.1429 10.4286H29.2857C29.3994 10.4286 29.5084 10.3834 29.5888 10.303C29.6691 10.2227 29.7143 10.1137 29.7143 10ZM29.7143 16.8571V15.1429C29.7143 15.0292 29.6691 14.9202 29.5888 14.8398C29.5084 14.7594 29.3994 14.7143 29.2857 14.7143H14.1429C14.0292 14.7143 13.9202 14.7594 13.8398 14.8398C13.7594 14.9202 13.7143 15.0292 13.7143 15.1429V16.8571C13.7143 16.9708 13.7594 17.0798 13.8398 17.1602C13.9202 17.2406 14.0292 17.2857 14.1429 17.2857H29.2857C29.3994 17.2857 29.5084 17.2406 29.5888 17.1602C29.6691 17.0798 29.7143 16.9708 29.7143 16.8571ZM29.7143 23.7143V22C29.7143 21.8863 29.6691 21.7773 29.5888 21.697C29.5084 21.6166 29.3994 21.5714 29.2857 21.5714H14.1429C14.0292 21.5714 13.9202 21.6166 13.8398 21.697C13.7594 21.7773 13.7143 21.8863 13.7143 22V23.7143C13.7143 23.828 13.7594 23.937 13.8398 24.0173C13.9202 24.0977 14.0292 24.1429 14.1429 24.1429H29.2857C29.3994 24.1429 29.5084 24.0977 29.5888 24.0173C29.6691 23.937 29.7143 23.828 29.7143 23.7143Z">
+                                            </path>
+                                        </svg><span class="undefined pl-4 pr-8 leading-none">Invoices</span></a>
+                                </div>
+                                <h3 class="font-family-montserrat-bold text-xs uppercase pt-9 pb-3 text-white">Start
+                                    Mining</h3>
+                                <div class="flex flex-col pl-5 pb-3">
+                                    <a href="settings.html" class="w-full mt-1 group cursor-pointer flex items-center px-4  py-5 text-base leading-6 font-medium focus:outline-none transition ease-in-out duration-150 hover:text-black hover:bg-gray-dashboard-link text-gray-500 undefined"><svg
+                                            class="fill-current w-4 btli-link-color" viewBox="0 0 16 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M4.65823 5.70979C4.17271 5.70902 3.70025 5.87087 3.31272 6.17071C2.92518 6.47055 2.6438 6.89196 2.51139 7.37082H0.622887C0.278876 7.37082 0 7.6497 0 7.99371C0 8.33772 0.278876 8.6166 0.622886 8.6166H2.51139C2.64156 9.0978 2.92197 9.52201 3.30971 9.82428C3.69744 10.1265 4.17112 10.2902 4.65823 10.2902C5.14533 10.2902 5.61902 10.1265 6.00675 9.82428C6.39448 9.52201 6.6749 9.0978 6.80506 8.6166H15.3771C15.7211 8.6166 16 8.33772 16 7.99371C16 7.6497 15.7211 7.37082 15.3771 7.37082H6.80506C6.67265 6.89196 6.39127 6.47055 6.00374 6.17071C5.61621 5.87087 5.14374 5.70902 4.65823 5.70979ZM4.65823 9.03185C4.45794 9.03185 4.26216 8.97097 4.09563 8.85689C3.92909 8.74282 3.7993 8.58069 3.72265 8.39099C3.64601 8.20129 3.62595 7.99256 3.66503 7.79118C3.7041 7.5898 3.80055 7.40482 3.94217 7.25963C4.08379 7.11444 4.26423 7.01557 4.46067 6.97551C4.6571 6.93546 4.86072 6.95602 5.04576 7.03459C5.23079 7.11316 5.38895 7.24623 5.50022 7.41695C5.6115 7.58767 5.67089 7.78838 5.67089 7.99371C5.67089 8.26904 5.5642 8.5331 5.37429 8.72779C5.18438 8.92248 4.9268 9.03185 4.65823 9.03185Z">
+                                            </path>
+                                            <path
+                                                d="M11.3418 2.72643e-06C10.8563 -0.000766091 10.3838 0.161082 9.99626 0.460919C9.60873 0.760756 9.32735 1.18217 9.19494 1.66103H0.622886C0.278875 1.66103 0 1.93991 0 2.28392C0 2.62793 0.278876 2.90681 0.622886 2.90681H9.19494C9.3251 3.38801 9.60552 3.81222 9.99325 4.11449C10.381 4.41676 10.8547 4.58042 11.3418 4.58042C11.8289 4.58042 12.3026 4.41676 12.6903 4.11449C13.078 3.81222 13.3584 3.38801 13.4886 2.90681H15.3771C15.7211 2.90681 16 2.62793 16 2.28392C16 1.93991 15.7211 1.66103 15.3771 1.66103H13.4886C13.3562 1.18217 13.0748 0.760756 12.6873 0.460919C12.2998 0.161082 11.8273 -0.000766091 11.3418 2.72643e-06ZM11.3418 3.32206C11.1415 3.32206 10.9457 3.26118 10.7792 3.1471C10.6126 3.03303 10.4828 2.8709 10.4062 2.6812C10.3296 2.4915 10.3095 2.28277 10.3486 2.08139C10.3876 1.88001 10.4841 1.69503 10.6257 1.54984C10.7673 1.40465 10.9478 1.30578 11.1442 1.26572C11.3407 1.22567 11.5443 1.24622 11.7293 1.3248C11.9143 1.40337 12.0725 1.53644 12.1838 1.70716C12.295 1.87788 12.3544 2.07859 12.3544 2.28392C12.3544 2.55925 12.2477 2.82331 12.0578 3.018C11.8679 3.21269 11.6103 3.32206 11.3418 3.32206Z">
+                                            </path>
+                                            <path
+                                                d="M11.3418 11.4196C10.8563 11.4188 10.3838 11.5807 9.99626 11.8805C9.60873 12.1803 9.32735 12.6017 9.19494 13.0806H0.622886C0.278875 13.0806 0 13.3595 0 13.7035C0 14.0475 0.278876 14.3264 0.622886 14.3264H9.19494C9.3251 14.8076 9.60552 15.2318 9.99325 15.5341C10.381 15.8363 10.8547 16 11.3418 16C11.8289 16 12.3026 15.8363 12.6903 15.5341C13.078 15.2318 13.3584 14.8076 13.4886 14.3264H15.3771C15.7211 14.3264 16 14.0475 16 13.7035C16 13.3595 15.7211 13.0806 15.3771 13.0806H13.4886C13.3562 12.6017 13.0748 12.1803 12.6873 11.8805C12.2998 11.5807 11.8273 11.4188 11.3418 11.4196ZM11.3418 14.7416C11.1415 14.7416 10.9457 14.6808 10.7792 14.5667C10.6126 14.4526 10.4828 14.2905 10.4062 14.1008C10.3296 13.9111 10.3095 13.7023 10.3486 13.501C10.3876 13.2996 10.4841 13.1146 10.6257 12.9694C10.7673 12.8242 10.9478 12.7254 11.1442 12.6853C11.3407 12.6452 11.5443 12.6658 11.7293 12.7444C11.9143 12.823 12.0725 12.956 12.1838 13.1267C12.295 13.2975 12.3544 13.4982 12.3544 13.7035C12.3544 13.9788 12.2477 14.2429 12.0578 14.4376C11.8679 14.6323 11.6103 14.7416 11.3418 14.7416Z">
+                                            </path>
+                                        </svg><span class="undefined pl-4 pr-8 leading-none">Settings</span></a>
+                                </div>
+                                <div class="bg-gray-accent h-px w-full"></div>
+                            </nav>
+                            <div class="w-full flex flex-col justify-center self-center px-5 mt-4" style="max-width: 350px;">
+                                <div class="menu-pools pl-px pr-1.5">
+                                    <h4 class="font-family-montserrat-bold text-xs uppercase pb-3 text-white">DEFAULT POOL</h4>
+                                    <div class="menu-pool-default w-full flex overflow-hidden bg-gray-900 border border-gray-950 shadow-4xl">
+                                        <div class="text-white py-2 flex flex-col items-center justify-center">
+                                            <p class="text-sm">No Default Pool Set</p>
+                                            <p class="text-xs px-8 text-center">Please add at least 1 pool, once added you can assign hardware a
+                                                pool.</p>
+                                            <a href="settings.html?tab=account">
+                                                <div class="btli-link-color hover:btli-color-link font-bold text-sm cursor-pointer duration-200 "
+                                                    aria-hidden="true">
+                                                    <span class="mr-2">Set Up My Pool</span>
+                                                    <svg class="fill-current inline h-3" viewBox="0 0 14 12" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M13.4667 6L9.13333 12H6.8L10.4667 7H0V5H10.4667L6.8 0H9.13333L13.4667 6Z">
+                                                        </path>
+                                                    </svg>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="exit2" class="flex-1 xs:hidden" aria-hidden="true"></div>
+            </div>
+            <div id="hide" class="hidden lg:flex md:flex-shrink-0 dashboard-menu">
+                <div class="flex flex-col w-300px border-r border-gray-accent">
+                    <div class="h-0 flex-1 flex flex-col pb-4 overflow-y-auto">
+                        <nav class="mt-5 flex-1 px-5 ">
+                            <div class="flex justify-start pt-5 pb-8"><a href="">
+                                    <img class="w-28 lg:w-40" src="../images/sitelogoV1.png"></a>
+                            </div>
+                            <h3
+                                class="font-family-montserrat-bold tracking-wider text-12px leading-20px uppercase pb-4 text-white">
+                                General</h3>
+                            <div class="flex flex-col"><a href="hosting-order.html"
+                                    class="w-full mt-1 group cursor-pointer flex items-center px-4  py-5 text-base leading-6 font-medium focus:outline-none transition ease-in-out duration-150 hover:text-black hover:bg-gray-dashboard-link text-gray-500 undefined"><svg
+                                        class="fill-current w-4 btli-link-color" viewBox="0 0 19 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M17.3536 6.56239C18.1432 5.9939 18.6572 5.06225 18.6572 4.02063C18.6572 2.31131 17.2736 0.899994 15.5366 0.899994H3.32071C1.61025 0.899994 0.200073 2.31017 0.200073 4.02063C0.200073 5.0639 0.71551 5.99616 1.51213 6.56428C0.720328 7.13293 0.200073 8.06107 0.200073 9.09999C0.200073 10.1433 0.71551 11.0755 1.51213 11.6436C0.720327 12.2123 0.200073 13.1404 0.200073 14.1794C0.200073 15.8887 1.58372 17.3 3.32071 17.3H15.562C17.2747 17.3 18.6572 15.8875 18.6572 14.1794C18.6572 13.1398 18.1454 12.2104 17.3536 11.6418C18.1432 11.0733 18.6572 10.1416 18.6572 9.09999C18.6572 8.06041 18.1454 7.13107 17.3536 6.56239ZM1.36198 4.02063C1.36198 5.10382 2.23751 5.97936 3.32071 5.97936H5.38102V2.0619H3.32071C2.23751 2.0619 1.36198 2.93744 1.36198 4.02063ZM15.5366 5.97936C16.6198 5.97936 17.4953 5.10382 17.4953 4.02063C17.4953 2.93744 16.6198 2.0619 15.5366 2.0619H6.54292V5.9999L15.5366 5.97936ZM15.5366 11.0587C16.6198 11.0587 17.4953 10.1832 17.4953 9.09999C17.4953 8.0168 16.6198 7.14126 15.5366 7.14126L6.54292 7.14126V11.0587H15.5366ZM5.38102 7.14126H3.32071C2.23751 7.14126 1.36198 8.0168 1.36198 9.09999C1.36198 10.1832 2.23751 11.0587 3.32071 11.0587H5.38102V7.14126ZM6.54292 16.1381H15.5366C16.6198 16.1381 17.4953 15.2626 17.4953 14.1794C17.4953 13.0962 16.6198 12.2206 15.5366 12.2206H6.54292V16.1381ZM5.38102 16.1381V12.2206H3.32071C2.23751 12.2206 1.36198 13.0962 1.36198 14.1794C1.36198 15.2626 2.23751 16.1381 3.32071 16.1381H5.38102Z">
+                                        </path>
+                                    </svg><span class="undefined pl-4 pr-8 leading-none">Hosting Orders</span></a><a
+                                    href="#" class="w-full mt-1 group cursor-pointer flex items-center px-4  py-5 text-base leading-6 font-medium focus:outline-none transition ease-in-out duration-150 hover:text-black hover:bg-gray-dashboard-link text-black bg-gray-dashboard-link undefined">
+                                    <svg class="fill-current w-4 text-gray-500" viewBox="0 0 37 32" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M33.1429 2.28571C33.7731 2.28571 34.2857 2.79843 34.2857 3.42857V28.5714C34.2857 29.2016 33.7731 29.7143 33.1429 29.7143H3.42857C2.79836 29.7143 2.28571 29.2016 2.28571 28.5714V3.42857C2.28571 2.79843 2.79836 2.28571 3.42857 2.28571H33.1429ZM33.1429 0H3.42857C1.535 0 0 1.535 0 3.42857V28.5714C0 30.465 1.535 32 3.42857 32H33.1429C35.0364 32 36.5714 30.465 36.5714 28.5714V3.42857C36.5714 1.535 35.0364 0 33.1429 0ZM9.14286 6.85714C7.8805 6.85714 6.85714 7.8805 6.85714 9.14286C6.85714 10.4052 7.8805 11.4286 9.14286 11.4286C10.4052 11.4286 11.4286 10.4052 11.4286 9.14286C11.4286 7.8805 10.4052 6.85714 9.14286 6.85714ZM9.14286 13.7143C7.8805 13.7143 6.85714 14.7376 6.85714 16C6.85714 17.2624 7.8805 18.2857 9.14286 18.2857C10.4052 18.2857 11.4286 17.2624 11.4286 16C11.4286 14.7376 10.4052 13.7143 9.14286 13.7143ZM9.14286 20.5714C7.8805 20.5714 6.85714 21.5948 6.85714 22.8571C6.85714 24.1195 7.8805 25.1429 9.14286 25.1429C10.4052 25.1429 11.4286 24.1195 11.4286 22.8571C11.4286 21.5948 10.4052 20.5714 9.14286 20.5714ZM29.7143 10V8.28572C29.7143 8.17205 29.6691 8.06304 29.5888 7.98267C29.5084 7.9023 29.3994 7.85714 29.2857 7.85714H14.1429C14.0292 7.85714 13.9202 7.9023 13.8398 7.98267C13.7594 8.06304 13.7143 8.17205 13.7143 8.28572V10C13.7143 10.1137 13.7594 10.2227 13.8398 10.303C13.9202 10.3834 14.0292 10.4286 14.1429 10.4286H29.2857C29.3994 10.4286 29.5084 10.3834 29.5888 10.303C29.6691 10.2227 29.7143 10.1137 29.7143 10ZM29.7143 16.8571V15.1429C29.7143 15.0292 29.6691 14.9202 29.5888 14.8398C29.5084 14.7594 29.3994 14.7143 29.2857 14.7143H14.1429C14.0292 14.7143 13.9202 14.7594 13.8398 14.8398C13.7594 14.9202 13.7143 15.0292 13.7143 15.1429V16.8571C13.7143 16.9708 13.7594 17.0798 13.8398 17.1602C13.9202 17.2406 14.0292 17.2857 14.1429 17.2857H29.2857C29.3994 17.2857 29.5084 17.2406 29.5888 17.1602C29.6691 17.0798 29.7143 16.9708 29.7143 16.8571ZM29.7143 23.7143V22C29.7143 21.8863 29.6691 21.7773 29.5888 21.697C29.5084 21.6166 29.3994 21.5714 29.2857 21.5714H14.1429C14.0292 21.5714 13.9202 21.6166 13.8398 21.697C13.7594 21.7773 13.7143 21.8863 13.7143 22V23.7143C13.7143 23.828 13.7594 23.937 13.8398 24.0173C13.9202 24.0977 14.0292 24.1429 14.1429 24.1429H29.2857C29.3994 24.1429 29.5084 24.0977 29.5888 24.0173C29.6691 23.937 29.7143 23.828 29.7143 23.7143Z">
+                                        </path>
+                                    </svg><span class="undefined pl-4 pr-8 leading-none">Invoices</span></a></div>
+                            <h3
+                                class="font-family-montserrat-bold tracking-wider text-12px leading-20px uppercase pt-9 pb-4 text-white">
+                                Start Mining</h3>
+                            <div class="flex flex-col pb-6"><a href="settings.html" class="w-full mt-1 group cursor-pointer flex items-center px-4  py-5 text-base leading-6 font-medium focus:outline-none transition ease-in-out duration-150 hover:text-black hover:bg-gray-dashboard-link text-gray-500 undefined">
+                                    <svg class="fill-current w-4 btli-link-color" viewBox="0 0 16 16" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M4.65823 5.70979C4.17271 5.70902 3.70025 5.87087 3.31272 6.17071C2.92518 6.47055 2.6438 6.89196 2.51139 7.37082H0.622887C0.278876 7.37082 0 7.6497 0 7.99371C0 8.33772 0.278876 8.6166 0.622886 8.6166H2.51139C2.64156 9.0978 2.92197 9.52201 3.30971 9.82428C3.69744 10.1265 4.17112 10.2902 4.65823 10.2902C5.14533 10.2902 5.61902 10.1265 6.00675 9.82428C6.39448 9.52201 6.6749 9.0978 6.80506 8.6166H15.3771C15.7211 8.6166 16 8.33772 16 7.99371C16 7.6497 15.7211 7.37082 15.3771 7.37082H6.80506C6.67265 6.89196 6.39127 6.47055 6.00374 6.17071C5.61621 5.87087 5.14374 5.70902 4.65823 5.70979ZM4.65823 9.03185C4.45794 9.03185 4.26216 8.97097 4.09563 8.85689C3.92909 8.74282 3.7993 8.58069 3.72265 8.39099C3.64601 8.20129 3.62595 7.99256 3.66503 7.79118C3.7041 7.5898 3.80055 7.40482 3.94217 7.25963C4.08379 7.11444 4.26423 7.01557 4.46067 6.97551C4.6571 6.93546 4.86072 6.95602 5.04576 7.03459C5.23079 7.11316 5.38895 7.24623 5.50022 7.41695C5.6115 7.58767 5.67089 7.78838 5.67089 7.99371C5.67089 8.26904 5.5642 8.5331 5.37429 8.72779C5.18438 8.92248 4.9268 9.03185 4.65823 9.03185Z">
+                                        </path>
+                                        <path
+                                            d="M11.3418 2.72643e-06C10.8563 -0.000766091 10.3838 0.161082 9.99626 0.460919C9.60873 0.760756 9.32735 1.18217 9.19494 1.66103H0.622886C0.278875 1.66103 0 1.93991 0 2.28392C0 2.62793 0.278876 2.90681 0.622886 2.90681H9.19494C9.3251 3.38801 9.60552 3.81222 9.99325 4.11449C10.381 4.41676 10.8547 4.58042 11.3418 4.58042C11.8289 4.58042 12.3026 4.41676 12.6903 4.11449C13.078 3.81222 13.3584 3.38801 13.4886 2.90681H15.3771C15.7211 2.90681 16 2.62793 16 2.28392C16 1.93991 15.7211 1.66103 15.3771 1.66103H13.4886C13.3562 1.18217 13.0748 0.760756 12.6873 0.460919C12.2998 0.161082 11.8273 -0.000766091 11.3418 2.72643e-06ZM11.3418 3.32206C11.1415 3.32206 10.9457 3.26118 10.7792 3.1471C10.6126 3.03303 10.4828 2.8709 10.4062 2.6812C10.3296 2.4915 10.3095 2.28277 10.3486 2.08139C10.3876 1.88001 10.4841 1.69503 10.6257 1.54984C10.7673 1.40465 10.9478 1.30578 11.1442 1.26572C11.3407 1.22567 11.5443 1.24622 11.7293 1.3248C11.9143 1.40337 12.0725 1.53644 12.1838 1.70716C12.295 1.87788 12.3544 2.07859 12.3544 2.28392C12.3544 2.55925 12.2477 2.82331 12.0578 3.018C11.8679 3.21269 11.6103 3.32206 11.3418 3.32206Z">
+                                        </path>
+                                        <path
+                                            d="M11.3418 11.4196C10.8563 11.4188 10.3838 11.5807 9.99626 11.8805C9.60873 12.1803 9.32735 12.6017 9.19494 13.0806H0.622886C0.278875 13.0806 0 13.3595 0 13.7035C0 14.0475 0.278876 14.3264 0.622886 14.3264H9.19494C9.3251 14.8076 9.60552 15.2318 9.99325 15.5341C10.381 15.8363 10.8547 16 11.3418 16C11.8289 16 12.3026 15.8363 12.6903 15.5341C13.078 15.2318 13.3584 14.8076 13.4886 14.3264H15.3771C15.7211 14.3264 16 14.0475 16 13.7035C16 13.3595 15.7211 13.0806 15.3771 13.0806H13.4886C13.3562 12.6017 13.0748 12.1803 12.6873 11.8805C12.2998 11.5807 11.8273 11.4188 11.3418 11.4196ZM11.3418 14.7416C11.1415 14.7416 10.9457 14.6808 10.7792 14.5667C10.6126 14.4526 10.4828 14.2905 10.4062 14.1008C10.3296 13.9111 10.3095 13.7023 10.3486 13.501C10.3876 13.2996 10.4841 13.1146 10.6257 12.9694C10.7673 12.8242 10.9478 12.7254 11.1442 12.6853C11.3407 12.6452 11.5443 12.6658 11.7293 12.7444C11.9143 12.823 12.0725 12.956 12.1838 13.1267C12.295 13.2975 12.3544 13.4982 12.3544 13.7035C12.3544 13.9788 12.2477 14.2429 12.0578 14.4376C11.8679 14.6323 11.6103 14.7416 11.3418 14.7416Z">
+                                        </path>
+                                    </svg><span class="undefined pl-4 pr-8 leading-none">Settings</span></a></div>
+                            <div class="w-full flex flex-col justify-center self-center px-5 mt-4" style="max-width: 350px;">
+                                <div class="menu-pools pl-px pr-1.5">
+                                    <h4 class="font-family-montserrat-bold text-xs uppercase pb-3 text-white">DEFAULT POOL</h4>
+                                    <div class="menu-pool-default w-full flex overflow-hidden bg-gray-900 border border-gray-950 shadow-4xl">
+                                        <div class="text-white py-2 flex flex-col items-center justify-center">
+                                            <p class="text-sm">No Default Pool Set</p>
+                                            <p class="text-xs px-8 text-center">Please add at least 1 pool, once added you can assign hardware a
+                                                pool.</p>
+                                            <a href="settings.html?tab=account">
+                                                <div class="btli-link-color hover:btli-color-link font-bold text-sm cursor-pointer duration-200 "
+                                                    aria-hidden="true">
+                                                    <span class="mr-2">Set Up My Pool</span>
+                                                    <svg class="fill-current inline h-3" viewBox="0 0 14 12" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M13.4667 6L9.13333 12H6.8L10.4667 7H0V5H10.4667L6.8 0H9.13333L13.4667 6Z">
+                                                        </path>
+                                                    </svg>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-1">
+                <div class="fixed inset-0 flex justify-center items-start px-4 py-6 md-d:pb-14 pointer-events-none sm:px-40px sm:pb-14"
+                    aria-hidden="true" style="z-index: 110;">
+                    <div
+                        class=" opacity-0 transform relative translate-x-0 transition duration-500 ease-in-out max-w-6xl md:max-w-sm w-full bg-white border rounded-lg border-gray-form text-black shadow-lg z-40">
+                        <div class="cursor-pointer">
+                            <div class="py-4 px-4">
+                                <div class="flex items-center"><svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"
+                                        class="fill-current w-10 h-10 text-red-600">
+                                        <g>
+                                            <path
+                                                d="M14.5457 15.9915L16 14.5382L11.4585 10L16 5.46176L14.5457 4.0085L10.0043 8.54674L5.45429 4L4 5.45326L8.54997 10L4 14.5467L5.45429 16L10.0043 11.4533L14.5457 15.9915Z">
+                                            </path>
+                                        </g>
+                                    </svg>
+                                    <div class="ml-3 w-0 flex-1 pt-0.5 whitespace-nowrap mr-3">
+                                        <p class="raleway-regular text-base whitespace-nowrap lg:text-xl">Server error</p>
+                                    </div>
+                                </div><button type="button"
+                                    class="inline-flex absolute top-2 right-2 text-base-gold focus:outline-none focus:text-gray-500 transition ease-in-out duration-150"><svg
+                                        viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"
+                                        class="fill-current w-5 h-5 text-black hover:text-orange-base transition duration-200">
+                                        <g>
+                                            <path
+                                                d="M14.5457 15.9915L16 14.5382L11.4585 10L16 5.46176L14.5457 4.0085L10.0043 8.54674L5.45429 4L4 5.45326L8.54997 10L4 14.5467L5.45429 16L10.0043 11.4533L14.5457 15.9915Z">
+                                            </path>
+                                        </g>
+                                    </svg></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col pt-20 lg:pt-5" style="min-height: 100vh;">
+                    <div class="px-5 md:px-8 w-full flex flex-row-reverse sm:flex-row justify-end mb-5 sm:mb-10">
+                        <div id="profile" class="group flex flex-row mr-3 sm:mr-0 items-center cursor-pointer relative" aria-hidden="true">
+                            <div class="btli-bg bg-white rounded-full p-2 mr-2 transition-all duration-200">
+                                <svg viewBox="0 0 12 14" fill="current" xmlns="http://www.w3.org/2000/svg"
+                                    class="group-hover:text-white text-black w-5 h-5 fill-current transition-all duration-200">
+                                    <path
+                                        d="M6.8659 7.16092H4.55939C2.03831 7.16092 0 9.19923 0 11.7203V12.3908C0 13.2759 0.724138 14 1.6092 14H9.84291C10.728 14 11.4521 13.2759 11.4521 12.3908V11.7203C11.4253 9.22605 9.38697 7.16092 6.8659 7.16092ZM10.3525 12.4176C10.3525 12.7126 10.1111 12.954 9.81609 12.954H1.6092C1.31418 12.954 1.0728 12.7126 1.0728 12.4176V11.7471C1.0728 9.81609 2.62835 8.26054 4.55939 8.26054H6.8659C8.79693 8.26054 10.3525 9.81609 10.3525 11.7471V12.4176Z">
+                                    </path>
+                                    <path
+                                        d="M5.71264 6.62452C7.5364 6.62452 9.01149 5.14943 9.01149 3.32567C9.01149 1.50192 7.5364 0 5.71264 0C3.88889 0 2.41379 1.4751 2.41379 3.29885C2.41379 5.12261 3.88889 6.62452 5.71264 6.62452ZM5.71264 1.0728C6.94636 1.0728 7.9387 2.06513 7.9387 3.29885C7.9387 4.53257 6.94636 5.5249 5.71264 5.5249C4.47893 5.5249 3.48659 4.53257 3.48659 3.29885C3.48659 2.06513 4.47893 1.0728 5.71264 1.0728Z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <p class="hover:btli-color text-black transition-all truncate duration-200 font-family-montserrat-medium mr-2">
+                                Howdy Paulo</p>
+                            <svg viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-3 fill-current text-gray-600">
+                                <path fill-rule="evenodd" clip-rule="evenodd" class="border border-gray-form"
+                                    d="M7.21274 0C7.53001 0 7.7064 0.367001 7.5082 0.614749L4.29546 4.63067C4.14399 4.82001 3.85601 4.82001 3.70454 4.63067L0.4918 0.61475C0.293601 0.367001 0.469991 0 0.787263 0L7.21274 0Z">
+                                </path>
+                            </svg>
+                            <div id="logout"
+                                class="absolute z-50 mt-2px top-9 left-0 bg-white rounded-lg border border-gray-form flex flex-col shadow-lg hidden"
+                                style="width: 110%;"><svg viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                    class="text-white fill-current w-3 transform rotate-180 absolute right-4 z-70 -top-2">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" class="border border-gray-form"
+                                        d="M7.21274 0C7.53001 0 7.7064 0.367001 7.5082 0.614749L4.29546 4.63067C4.14399 4.82001 3.85601 4.82001 3.70454 4.63067L0.4918 0.61475C0.293601 0.367001 0.469991 0 0.787263 0L7.21274 0Z">
+                                    </path>
+                                </svg>
+                                <ul class="flex relative flex-col p-2">
+                                    <li class="hover:bg-gray-light rounded-lg px-3 py-1">
+                                        <button type="button"
+                                            class="w-full focus:outline-none cursor-pointer text-left px-2 lg:py-2 leading-6 font-family-montserrat-medium text-sm lg:text-sm text-black">Log
+                                            Out</button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div id="logout-overlay" class="hidden"></div>
+                        </div>
+                    </div>
+                    <div
+                        class="w-full flex flex-col md:flex-row justify-between items-left md:items-center text-left px-5 md:px-8 pb-3">
+                        <h3 class="font-family-montserrat-medium cred leading-none text-26px leading-32px mb-2 md:mb-0">Outstanding
+                            Invoices</h3>
+                        <div class="mb-6 xl:mb-0 flex justify-between">
+                            <div class="transition-all duration-100 relative
+                                    rounded-full border border-gray-form bg-white py-1 px-4">
+                                <div class="relative">
+                                    <div class="absolute inset-y-0 left-0 pl-0 flex items-center pointer-events-none"><svg
+                                            class="fill-current w-5 text-gray-500" viewBox="0 0 20 20"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M15.1204 13.5736L19.8623 18.3155C20.0459 18.4991 20.0459 18.796 19.8623 18.9795L18.9795 19.8623C18.796 20.0459 18.4991 20.0459 18.3155 19.8623L13.5736 15.1204C13.4876 15.0305 13.4368 14.9133 13.4368 14.7883V14.2727C12.0111 15.5031 10.1558 16.2492 8.1246 16.2492C3.63654 16.2492 0 12.6127 0 8.1246C0 3.63654 3.63654 0 8.1246 0C12.6127 0 16.2492 3.63654 16.2492 8.1246C16.2492 10.1558 15.5031 12.0111 14.2727 13.4368H14.7883C14.9133 13.4368 15.0305 13.4837 15.1204 13.5736ZM1.87487 8.12461C1.87487 11.5776 4.67161 14.3743 8.12457 14.3743C11.5775 14.3743 14.3743 11.5776 14.3743 8.12461C14.3743 4.67166 11.5775 1.87492 8.12457 1.87492C4.67161 1.87492 1.87487 4.67166 1.87487 8.12461Z">
+                                            </path>
+                                        </svg></div><input autocomplete="off"
+                                        class="block w-full pl-10 pr-3 py-2 border border-transparent rounded-md leading-5 text-gray-700 placeholder-gray-500 focus:outline-none focus:bg-white sm:text-sm transition duration-150 ease-in-out"
+                                        placeholder="Search...">
+                                </div>
+                            </div><span aria-hidden="true"
+                                class="w-11 h-11 ml-3 bg-gray-300 rounded flex justify-center items-center cursor-pointer"><svg
+                                    class="fill-current w-5 text-gray-860" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M13.64 2.35C12.19 0.9 10.2 0 7.99 0C3.57 0 0 3.58 0 8C0 12.42 3.57 16 7.99 16C11.72 16 14.83 13.45 15.72 10H13.64C12.82 12.33 10.6 14 7.99 14C4.68 14 1.99 11.31 1.99 8C1.99 4.69 4.68 2 7.99 2C9.65 2 11.13 2.69 12.21 3.78L8.99 7H15.99V0L13.64 2.35Z"
+                                        fill="currentColor"></path>
+                                </svg></span>
+                        </div>
+                    </div>
+                    <div class="xl:mt-6 border bg-white py-9 rounded-xl text-center ml-9 mr-9">
+                        <p class="text-13px leading-34px font-semibold">Looks like you don’t have any outstanding invoices currently
+                        </p>
+                    </div>
+                    <div class="px-5 md:px-8 w-full flex flex-row-reverse sm:flex-row justify-end fixed bottom-0 right-0 pb-1">
+                        <a class="group mr-2 sm:mr-0" href="#" target="blank" rel="noreferrer">
+                            <div class="flex flex-row items-center sm:mr-5">
+                                <div class="btli-bg bg-white rounded-full p-2 sm:mr-2 transition-all duration-200">
+                                    <svg viewBox="0 0 14 14" fill="current" xmlns="http://www.w3.org/2000/svg"
+                                        class="group-hover:text-white text-black w-5 h-5 fill-current transition-all duration-200">
+                                        <path
+                                            d="M6.84756 0C3.07181 0 0 2.66806 0 5.94738C0.00459691 7.11929 0.392347 8.25755 1.10412 9.18857L1.4194 13.4033C1.42779 13.525 1.47088 13.6417 1.54355 13.7396C1.61623 13.8376 1.71545 13.9127 1.82947 13.9559C1.9041 13.985 1.98347 13.9999 2.06355 14C2.22785 13.9998 2.38575 13.9363 2.50444 13.8227L4.81894 11.6289C5.48055 11.8062 6.16261 11.8956 6.84756 11.8948C10.6233 11.8948 13.6951 9.2267 13.6951 5.94738C13.6951 2.66806 10.6233 0 6.84756 0ZM6.84756 10.9614C6.16351 10.9626 5.48315 10.8612 4.8292 10.6605L4.5686 10.5802L2.30461 12.7261L2.01379 8.83797L1.92561 8.72602C1.28959 7.93898 0.939708 6.95927 0.933294 5.94738C0.933294 3.18256 3.58639 0.933304 6.84756 0.933304C10.1087 0.933304 12.7618 3.18256 12.7618 5.94738C12.7618 8.7122 10.1087 10.9614 6.84756 10.9614Z">
+                                        </path>
+                                        <path
+                                            d="M9.81018 6.80026C10.2812 6.80026 10.6631 6.41838 10.6631 5.94732C10.6631 5.47626 10.2812 5.09438 9.81018 5.09438C9.33912 5.09438 8.95725 5.47626 8.95725 5.94732C8.95725 6.41838 9.33912 6.80026 9.81018 6.80026Z">
+                                        </path>
+                                        <path
+                                            d="M6.84756 5.09438C6.67886 5.09439 6.51396 5.14441 6.37369 5.23814C6.23343 5.33186 6.12411 5.46507 6.05956 5.62093C5.99501 5.77678 5.97812 5.94828 6.01103 6.11373C6.04394 6.27918 6.12518 6.43116 6.24446 6.55044C6.36375 6.66973 6.51573 6.75096 6.68118 6.78387C6.84663 6.81678 7.01813 6.79989 7.17398 6.73533C7.32984 6.67077 7.46305 6.56145 7.55677 6.42118C7.65049 6.28092 7.70051 6.11601 7.70051 5.94732C7.70051 5.83531 7.67845 5.7244 7.63558 5.62091C7.59272 5.51743 7.52989 5.4234 7.45068 5.3442C7.37148 5.26499 7.27745 5.20217 7.17397 5.1593C7.07048 5.11644 6.95957 5.09438 6.84756 5.09438Z">
+                                        </path>
+                                        <path
+                                            d="M3.88485 6.80025C4.35593 6.80025 4.73782 6.41836 4.73782 5.94729C4.73782 5.47621 4.35593 5.09432 3.88485 5.09432C3.41377 5.09432 3.03189 5.47621 3.03189 5.94729C3.03189 6.41836 3.41377 6.80025 3.88485 6.80025Z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <p
+                                    class="hover:btli-color text-black hidden sm:block transition-all duration-200 font-family-montserrat-medium">
+                                    Contact Support</p>
+                            </div>
+                        </a>
+                        <a class="group mr-2 sm:mr-0" href="#" target="blank" rel="noreferrer">
+                            <div class="flex flex-row items-center sm:mr-5">
+                                <div class="btli-bg bg-white rounded-full p-2 sm:mr-2 transition-all duration-200">
+                                    <svg class="fill-current group-hover:text-white text-black w-5 h-5 fill-current transition-all duration-200"
+                                        viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg">
+                                        <g>
+                                            <path
+                                                d="M17.123,9.2c-1.44,0-2.642,0.503-3.604,1.32S11.994,12,11.832,14h2.937c0.064-1,0.303-1.231,0.716-1.611 s0.926-0.618,1.541-0.618c0.615,0,1.116,0.174,1.504,0.571c0.389,0.396,0.583,0.882,0.583,1.48s-0.187,1.094-0.558,1.499 l-1.772,1.769c-0.518,0.518-0.626,0.934-0.78,1.249C15.849,18.654,16,19.133,16,19.78V21h2v-0.832c0-0.646,0.289-1.148,0.581-1.504 c0.112-0.129,0.333-0.287,0.521-0.473c0.186-0.187,0.448-0.405,0.715-0.656c0.267-0.25,0.5-0.457,0.662-0.619 c0.161-0.161,0.404-0.437,0.712-0.825c0.533-0.647,0.805-1.456,0.805-2.427c0-1.408-0.45-2.503-1.356-3.289 C19.732,9.592,18.563,9.2,17.123,9.2z"
+                                                fill="currentColor"></path>
+                                            <path
+                                                d="M16.94,22.145c-0.51,0-0.946,0.179-1.311,0.534c-0.364,0.356-0.546,0.78-0.546,1.274 c0,0.493,0.186,0.914,0.558,1.262c0.372,0.348,0.813,0.521,1.322,0.521c0.51,0,0.947-0.178,1.311-0.533 c0.363-0.356,0.546-0.781,0.546-1.274s-0.187-0.914-0.559-1.263C17.891,22.318,17.45,22.145,16.94,22.145z"
+                                                fill="currentColor"></path>
+                                            <path
+                                                d="M17,0C7.611,0,0,7.611,0,17s7.611,17,17,17s17-7.611,17-17S26.389,0,17,0z M17,31C9.268,31,3,24.732,3,17 C3,9.268,9.268,3,17,3c7.732,0,14,6.268,14,14C31,24.732,24.732,31,17,31z"
+                                                fill="currentColor"></path>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <p
+                                    class="hover:btli-color text-black hidden sm:block transition-all duration-200 font-family-montserrat-medium">
+                                    FAQ</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.js"></script>
+    <script src="../js/wow.min.js"></script>
+    <script>
+        //a gray overlay when the mobile menu displays
+        overlay = document.createElement('div');
+        overlay.classList.add('fixed', 'inset-0', 'z-10', 'overflow-y-hidden', 'wow', 'fadeIn');
+        //overlay.style.cssText = 'opacity: 1;';
+        overlay.innerHTML = '<div class="absolute inset-0 bg-gray-600"></div>';
+
+        //Making the nav bar and menu toggleable
+        function toggleMenu() {
+            bar = $('#bar')[0];
+            hide = $('#hide')[0];
+            sidebar = $('#sidebar')[0];
+            bar.classList.toggle('change');
+            sidebar.style.cssText = bar.classList.contains('change') ? 'transform: translate3d(0%, 0%, 0px);' : 'transform: translate3d(-100%, 0%, 0px);';
+            bar.classList.contains('change') ? $('.bg-gray-marble')[0].insertBefore(overlay, hide) : overlay.remove();
+        }
+        //$('#bar')[0].onclick = toggleMenu;
+        $('#bar').on('click', toggleMenu);
+        $('#exit2').on('click', toggleMenu);
+    </script>
+    <script>
+        //Implements the logout dropdown
+        $('#profile').on('click', () => {
+            $('#logout').toggleClass('hidden');
+            $('#logout-overlay').toggleClass('hidden');
+        })
+    </script>
+    <script src="../js/pool.js"></script>
+</body>
+
+</html>

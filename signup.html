@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Aspect Blockchain</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style3.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/style1.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="sect">
+        <div class="topmost">
+            <div class="container">
+                <div class="flex mx-auto justify-between">
+                    <p class="flex btc">Daily BTC Mined</p>
+                    <p class="flex btc justify-between"><span><img src="images/bitcoin1.webp" alt="bitcoin"> BTC</span>
+                        <span>$21,291.00</span>
+                        <span>-0.78%</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <header class="sticky-top pb-3 position-relative">
+            <div class="container clipped">
+                <div class="row">
+                    <div id="title" class="col-6">
+                        <a href="#">
+                            <img id="sitelogo" class="site-logo" src="images/sitelogoV1.png" alt="Aspect Blockchain"
+                                width="250px" height="auto">
+                        </a>
+                    </div>
+                    <nav class="navbar navbar-expand-md navbar-light col-6 pe-0">
+                        <div class="container-fluid">
+                            <button class="navbar-toggler" type="button" onclick="toggleOn()">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div>
+                                <div class="menu-bar" id="navbarSupportedContent">
+                                    <ul class="navbar-nav mb-2 mb-lg-0 nav-pills">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" aria-current="page" href="#" data-bs-toggle="modal" data-bs-target="#request">REQUEST A QUOTE</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">ABOUT US</a>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link" href="#">SUPPORT</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="sign-in.html">SIGN IN
+                                                <span class="sign-up">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"
+                                                        class="human-icon d-inline-block align-text-top">
+                                                        <defs>
+                                                            <style>
+                                                                .cls-1 {
+                                                                    fill: #fff;
+                                                                }
+
+                                                                .cls-2 {
+                                                                    fill: #000;
+                                                                }
+                                                            </style>
+                                                        </defs>
+                                                        <title>improved</title>
+                                                        <g id="Layer_2" data-name="Layer 2">
+                                                            <g id="Layer_1-2" data-name="Layer 1">
+                                                                <circle class="cls-1" cx="20" cy="20" r="20" />
+                                                                <circle class="cls-2" cx="20.29" cy="17.06" r="5.89" />
+                                                                <path class="cls-2"
+                                                                    d="M10.65,32.59a10.4,10.4,0,0,1,1-3.46,7.18,7.18,0,0,1,2.78-2.84A9.18,9.18,0,0,1,17,25.4c.39-.07,2.52-.06,3-.06a28.67,28.67,0,0,1,3.35,0,9,9,0,0,1,3.09,1.13A6.63,6.63,0,0,1,28.81,29a7.6,7.6,0,0,1,1,3.64,24.82,24.82,0,0,1-4.72,2.49,20.94,20.94,0,0,1-5.13.79A20.83,20.83,0,0,1,15,34.94,23.33,23.33,0,0,1,10.65,32.59Z" />
+                                                            </g>
+                                                        </g>
+                                                    </svg>
+                                                </span></a>
+                                        </li>
+                                    </ul>
+                                    <i id="toggle-off" class="fa fa-times" onclick="toggleOff()">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512">
+                                            <defs>
+                                                <style>
+                                                    .cls-1 {
+                                                        fill: #fff;
+                                                    }
+                                                </style>
+                                            </defs>
+                                            <title>times</title>
+                                            <path class="cls-1"
+                                                d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z" />
+                                        </svg>
+                                    </i>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main class="relative bg-white">
+            <div>
+                <div class="relative">
+                    <div class="absolute w-full bg-site h-1/2">
+                        <div class="w-full h-full"></div>
+                    </div>
+                    <div class="relative py-20 px-2 mx-auto w-full md:w-560px z-10 pb-0">
+                        <div class="bg-white rounded-lg shadow-form py-8 px-8 md:py-14 md:px-14 mb-8">
+                            <form class="flex flex-col items-center">
+                                <h1 class="text-center leading-tight text-3xl md:text-4xl mb-8">Sign Up</h1>
+                                <div class="flex flex-col md:flex-row w-full">
+                                    <div class="w-full">
+                                        <div class="flex w-full flex-col items-top mb-4 md:mb-7 md:pr-2.5">
+                                            <div class="flex">
+                                                <p class="text-black text-xs md:text-sm mb-2">First Name</p>
+                                            </div>
+                                            <div
+                                                class="border border-solid border-gray-form flex items-stretch justify-between  shadow-flake w-full bg-white ">
+                                                <input type="text" id="firstName"
+                                                    class="input pl-4 py-3 text-xs md:text-sm outline-none placeholder-gray-darker fill-current stroke-current placeholder-opacity-50  w-full pr-4  false"
+                                                    placeholder="" autocomplete="off" data-test="text-input" maxlength="100"
+                                                    value="">
+                                            </div>
+                                        </div>
+                                        <div class="font-inter text-xs xl:text-sm text-red-600 mb-4 -mt-3 md:-mt-5"></div>
+                                    </div>
+                                    <div class="w-full">
+                                        <div class="flex w-full flex-col items-top mb-4 md:mb-7 md:pl-2.5">
+                                            <div class="flex">
+                                                <p class="text-black text-xs md:text-sm mb-2">Last Name</p>
+                                            </div>
+                                            <div
+                                                class="border border-solid border-gray-form flex items-stretch justify-between  shadow-flake w-full bg-white ">
+                                                <input type="text" id="lastName"
+                                                    class="input pl-4 py-3 text-xs md:text-sm outline-none placeholder-gray-darker fill-current stroke-current placeholder-opacity-50  w-full pr-4  false"
+                                                    placeholder="" autocomplete="off" data-test="text-input" maxlength="100"
+                                                    value="">
+                                            </div>
+                                        </div>
+                                        <div class="font-inter text-xs xl:text-sm text-red-600 mb-4 -mt-3 md:-mt-5 md:pl-2.5">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="w-full">
+                                    <div class="flex w-full flex-col items-top mb-4 md:mb-7 ">
+                                        <div class="flex">
+                                            <p class="text-black text-xs md:text-sm mb-2">Email</p>
+                                        </div>
+                                        <div
+                                            class="border border-solid border-gray-form flex items-stretch justify-between  shadow-flake w-full bg-white ">
+                                            <input type="email" id="email"
+                                                class="input pl-4 py-3 text-xs md:text-sm outline-none placeholder-gray-darker fill-current stroke-current placeholder-opacity-50  w-full pr-4  false"
+                                                placeholder="" autocomplete="off" data-test="text-input" maxlength="100"
+                                                value="">
+                                        </div>
+                                    </div>
+                                    <div class="font-inter text-xs xl:text-sm text-red-600 mb-4 -mt-3 md:-mt-5"></div>
+                                </div>
+                                <div class="w-full">
+                                    <div class="flex w-full flex-col items-top mb-4 md:mb-7 ">
+                                        <div class="flex">
+                                            <p class="text-black text-xs md:text-sm mb-2">Password</p>
+                                        </div>
+                                        <div
+                                            class="border border-solid border-gray-form flex items-stretch justify-between  shadow-flake w-full bg-white ">
+                                            <input type="password" id="password"
+                                                class="input pl-4 py-3 text-xs md:text-sm outline-none placeholder-gray-darker fill-current stroke-current placeholder-opacity-50  w-full pr-4  false"
+                                                placeholder="" autocomplete="off" data-test="text-input" maxlength="100"
+                                                value=""><button id="signup-pswd" type="button" class="focus:outline-none">
+                                                    <svg id="eyed" version="1.0"
+                                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32.000000 32.000000"
+                                                    class="h-5 mr-4">
+                                                    <g transform="translate(0.000000,32.000000) scale(0.100000,-0.100000)"
+                                                        fill="#000000" stroke="none">
+                                                        <path
+                                                            d="M115 256 c-37 -16 -85 -70 -85 -96 0 -29 56 -87 95 -100 26 -9 44 -9 70 0 39 13 95 71 95 100 0 26 -48 80 -87 96 -39 17 -50 17 -88 0z m95 -31 c60 -31 64 -91 7 -125 -38 -24 -68 -25 -107 -5 -60 31 -64 91 -7 125 38 24 68 25 107 5z">
+                                                        </path>
+                                                        <path
+                                                            d="M122 198 c-15 -15 -15 -61 0 -76 15 -15 61 -15 76 0 15 15 15 61 0 76 -7 7 -24 12 -38 12 -14 0 -31 -5 -38 -12z m58 -24 c11 -12 10 -18 -3 -32 -16 -15 -18 -15 -34 0 -13 14 -14 20 -3 32 7 9 16 16 20 16 4 0 13 -7 20 -16z">
+                                                        </path>
+                                                    </g>
+                                                    </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="font-inter text-xs xl:text-sm text-red-600 mb-4 -mt-3 md:-mt-5"></div>
+                                </div>
+                                <div class="font-inter text-sm text-center text-red-600"></div>
+                                <div class="w-full mt-4 mb-8"><button type="submit" id="" data-test="wide-button"
+                                        class="flex items-center duration-200 flex-shrink-0 justify-center focus:outline-none hover:shadow-none cursor-pointer rounded-lg text-xs lg:text-sm px-4 py-3 font-semibold btli btli:hover shadow-btli rounded-md w-full"
+                                        disabled=""><span class="flex flex-row items-center"><span class="">Create
+                                                account</span></span></button></div>
+                                <div class="text-xs md:text-xs text-center leading-relaxed">By creating an account, you agree to
+                                    the
+                                    <a class="btli-link-color hover:underline" href="" rel="noreferrer" target="_blank">Terms of
+                                        Service</a> &amp; our <a class="btli-link-color hover:underline" href=""
+                                        rel="noreferrer" target="_blank">Privacy Policy</a> and receiving our updates.
+                                </div>
+                            </form>
+                        </div>
+                        <div class="text-sm text-center opacity-75">Do you already have an account? <a
+                                class="btli-link-color hover:underline" href="sign-in.html">Log in</a></div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="bg-white position-relative">
+            <div class="container pxs-4">
+                <div class="text-black dark:bg-black dark:text-white wow fadeInUp">
+                    <div class="pt-12 pb-2 overflow-visible relative px-0 mx-auto w-100">
+                        <div class="w-full flex flex-col lg:flex-row lg:items-stretch">
+                            <div class="w-full lg:w-1/2 flex flex-col justify-start mb-6 lg:mb-0">
+                                <img class="mb-4 w-200px" src="images/site-logof1.svg" alt="Apect Blockchain">
+                                <p class="w-full lg:w-10/12 text-sm md:mt-6 pb-2 border-b">
+                                    Aspect Blockchain is dedicated to provide individuals and B2B customers with hosting
+                                    solutions to fit their needs | <strong>Infrastructure to Power the World's Next Currency</strong>.
+                                </p>
+                                <div class="pt-2"><strong class="text-sm">Aspect Blockchain Inc.</strong>
+                                    <div class="text-sm">
+                                        <p>2310 North Henderson Ave #1440 Dallas 75206 Texas</p>
+                                    </div>
+                                    <div class="flex w-full lg:w-10/12 font-family-montserrat text-sm">
+                                        <p class="pr-2"><a
+                                                href="mailto:sales@aspectblockchain.com">sales@aspectblockchain.com</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-full lg:w-1/2">
+                                <div class="w-full flex flex-row flex-wrap text-sm">
+                                    <div class="w-1/2 lg:w-1/3 mt-4">
+                                        <h4 class="text-base fw-bold text-black dark:text-gray-darker uppercase mb-1">
+                                            General
+                                        </h4>
+                                        <div class="flex flex-col"><a href="" target=""
+                                                class="mb-2 flex flex-row items-center lg:my-0 lg:mb-1 font-medium mr-10 text-base duration-200 hover:btli-color "><span
+                                                    class="font-normal text-sm">About Us</span></a>
+                                        </div>
+                                    </div>
+                                    <div class="w-1/2 lg:w-1/3 mt-4">
+                                        <h4 class="text-base fw-bold text-black dark:text-gray-darker uppercase mb-1">
+                                            Socials
+                                        </h4>
+                                        <div class="flex flex-col"><a href="" target=""
+                                                class="mb-2 flex flex-row items-center lg:my-0 lg:mb-1 font-medium mr-10 text-base duration-200 hover:btli-color "><svg
+                                                    class="fill-current w-4 fill-current mr-2 " viewBox="0 0 30 30"
+                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M26.646 0.442383H3.3539C1.75256 0.442383 0.45694 1.75256 0.45694 3.3539L0.442383 29.5575L6.26541 23.7345H26.646C28.2474 23.7345 29.5575 22.4243 29.5575 20.823V3.3539C29.5575 1.75256 28.2474 0.442383 26.646 0.442383ZM23.7345 17.9114H6.26542V14.9999H23.7345V17.9114ZM23.7345 13.5442H6.26542V10.6326H23.7345V13.5442ZM23.7345 9.1769H6.26542V6.26539H23.7345V9.1769Z">
+                                                    </path>
+                                                </svg><span class="font-normal text-sm">Contact Us</span></a></div>
+                                        <div href="" as=""><a href="" target=""
+                                                class="mb-2 flex flex-row items-center lg:my-0 lg:mb-1 font-medium mr-10 text-base duration-200 hover:btli-color "><svg
+                                                    class="fill-current w-4 fill-current mr-2 -mt-1"
+                                                    viewBox="0 0 15 15" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M3.49161 4.81972H0.480336C0.346691 4.81972 0.2384 4.9283 0.2384 5.06219V14.7574C0.2384 14.8914 0.346691 14.9999 0.480336 14.9999H3.49161C3.62525 14.9999 3.73354 14.8914 3.73354 14.7574V5.06219C3.73354 4.9283 3.62525 4.81972 3.49161 4.81972Z">
+                                                    </path>
+                                                    <path
+                                                        d="M1.98706 0C0.891386 0 0 0.89238 0 1.98926C0 3.08662 0.891386 3.97934 1.98706 3.97934C3.08187 3.97934 3.97253 3.08657 3.97253 1.98926C3.97258 0.89238 3.08187 0 1.98706 0Z">
+                                                    </path>
+                                                    <path
+                                                        d="M11.151 4.57879C9.94157 4.57879 9.04752 5.09986 8.50525 5.69192V5.06223C8.50525 4.92833 8.39696 4.81976 8.26331 4.81976H5.37949C5.24585 4.81976 5.13756 4.92833 5.13756 5.06223V14.7575C5.13756 14.8914 5.24585 15 5.37949 15H8.38418C8.51783 15 8.62612 14.8914 8.62612 14.7575V9.96058C8.62612 8.34414 9.06421 7.7144 10.1885 7.7144C11.413 7.7144 11.5103 8.72394 11.5103 10.0437V14.7575C11.5103 14.8915 11.6186 15 11.7523 15H14.7581C14.8917 15 15 14.8915 15 14.7575V9.43951C15 7.03592 14.5427 4.57879 11.151 4.57879Z">
+                                                    </path>
+                                                </svg><span class="font-normal text-sm">LinkedIn</span></a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full flex flex-col lg:flex-row text-xs items-center justify-between my-6">
+                        <div class="w-full flex-wrap lg:w-2/3 flex flex-row just-cent">
+                            <div href="" as=""><a href="" target="_blank"
+                                    class="underline hover:btli-color duration-200 mr-5">Privacy
+                                    Policy</a></div>
+                            <div href="" as=""><a href="" target="_blank"
+                                    class="underline hover:btli-color duration-200 mr-5">Terms
+                                    of
+                                    Service</a></div>
+                        </div>
+                        <div class="w-full lg:text-right mtc-4 lg:mt-0 lg:w-1/3">
+                            <p class="text-center">© 2022 Aspect Blockchain. All Rights Reserved.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </footer>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap-v5.0.2.min.js"></script>
+    <script src="js/request-quote.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        //Sign up password toggles
+        function togglePassword() {
+            let pswd = document.querySelector('#password');
+            if (pswd.type === 'password') {
+                pswd.type = 'text';
+
+                //Change eye state
+                $('#signup-pswd').html(`
+                    <svg id="non-eyed" version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32.000000 32.000000" class="h-5 mr-4">
+                        <g transform="translate(0.000000,32.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
+                            <path
+                                d="M253 269 c-19 -19 -25 -20 -57 -9 -48 16 -95 0 -136 -46 -36 -41 -37 -62 -9 -98 l21 -27 -23 -25 c-29 -31 -16 -44 15 -15 22 21 28 22 60 11 48 -16 96 0 136 46 36 41 37 62 9 98 l-21 27 21 23 c36 38 22 52 -16 15z m-59 -35 c25 -10 8 -24 -28 -24 -40 0 -53 -14 -58 -59 -4 -41 -22 -51 -38 -21 -32 59 54 131 124 104z m56 -45 c32 -58 -54 -130 -124 -103 -25 10 -8 24 28 24 40 0 56 15 56 55 0 49 21 61 40 24z m-95 -18 c-3 -6 -11 -11 -17 -11 -6 0 -6 6 2 15 14 17 26 13 15 -4z m25 -26 c-7 -9 -15 -13 -17 -11 -7 7 7 26 19 26 6 0 6 -6 -2 -15z">
+                            </path>
+                        </g>
+                    </svg>
+                `)
+            } else {
+                pswd.type = 'password';
+
+                //Change eye state
+                $('#signup-pswd').html(`
+                    <svg id="eyed" version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32.000000 32.000000" class="h-5 mr-4">
+                        <g transform="translate(0.000000,32.000000) scale(0.100000,-0.100000)"
+                            fill="#000000" stroke="none">
+                            <path
+                                d="M115 256 c-37 -16 -85 -70 -85 -96 0 -29 56 -87 95 -100 26 -9 44 -9 70 0 39 13 95 71 95 100 0 26 -48 80 -87 96 -39 17 -50 17 -88 0z m95 -31 c60 -31 64 -91 7 -125 -38 -24 -68 -25 -107 -5 -60 31 -64 91 -7 125 38 24 68 25 107 5z">
+                            </path>
+                            <path
+                                d="M122 198 c-15 -15 -15 -61 0 -76 15 -15 61 -15 76 0 15 15 15 61 0 76 -7 7 -24 12 -38 12 -14 0 -31 -5 -38 -12z m58 -24 c11 -12 10 -18 -3 -32 -16 -15 -18 -15 -34 0 -13 14 -14 20 -3 32 7 9 16 16 20 16 4 0 13 -7 20 -16z">
+                            </path>
+                        </g>
+                    </svg>
+                `)
+            }
+        }
+
+        document.querySelector('#signup-pswd').onclick = togglePassword;
+    </script>
+</body>
+
+</html>
